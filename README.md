@@ -31,5 +31,6 @@ This is a Spring Boot project designed to manage employee data. It provides REST
 git clone <repository-url>
 cd employee-management-system
 
-### API documentation is available at
-http://localhost:8080/swagger-ui.html
+# Swagger UI Path
+springdoc.swagger-ui.path=/swagger-ui.html
+
