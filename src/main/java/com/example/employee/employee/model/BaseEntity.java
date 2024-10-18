@@ -1,13 +1,16 @@
 package com.example.employee.employee.model;
 
 import jakarta.persistence.*;
+
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @MappedSuperclass
-public abstract class BaseEntity {
+public abstract class BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(updatable = false, nullable = false)
     private Long id;
 
     @Column(updatable = false)

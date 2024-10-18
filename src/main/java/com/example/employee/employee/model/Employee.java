@@ -2,19 +2,11 @@ package com.example.employee.employee.model;
 
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
 public class Employee extends BaseEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
 
     private String name;
     private String surname;
@@ -36,14 +28,6 @@ public class Employee extends BaseEntity {
 
     public Employee() {
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -98,11 +82,11 @@ public class Employee extends BaseEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Employee employee)) return false;
-        return getAge() == employee.getAge() && getWorkYears() == employee.getWorkYears() && Objects.equals(getId(), employee.getId()) && Objects.equals(getName(), employee.getName()) && Objects.equals(getSurname(), employee.getSurname()) && Objects.equals(getSalary(), employee.getSalary()) && Objects.equals(getTitle(), employee.getTitle());
+        return Objects.equals(getId(), employee.getId()) && getAge() == employee.getAge() && getWorkYears() == employee.getWorkYears() && Objects.equals(getName(), employee.getName()) && Objects.equals(getSurname(), employee.getSurname()) && Objects.equals(getSalary(), employee.getSalary()) && Objects.equals(getTitle(), employee.getTitle());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getSurname(), getAge(), getSalary(), getWorkYears(), getTitle());
+        return Objects.hash(getId(),getName(), getSurname(), getAge(), getSalary(), getWorkYears(), getTitle(),getCreateDate(),getUpdateDate());
     }
 }
