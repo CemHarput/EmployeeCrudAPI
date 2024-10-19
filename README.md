@@ -34,5 +34,5 @@ cd employee-management-system
 # Swagger UI Path
 springdoc.swagger-ui.path=/swagger-ui/index.html#/
 
-![Swagger UI Screenshot](swagger.png)
+![Swagger UI Screenshot](https://github.com/CemHarput/EmployeeCrudAPI/blob/master/swagger.png)
 
