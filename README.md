@@ -32,5 +32,5 @@ git clone <repository-url>
 cd employee-management-system
 
 # Swagger UI Path
-springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.path=/swagger-ui/index.html#/
 
