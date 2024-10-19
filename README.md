@@ -34,6 +34,5 @@ cd employee-management-system
 # Swagger UI Path
 springdoc.swagger-ui.path=/swagger-ui/index.html#/
 
-
-![Swagger](swagger.png)
+![Swagger UI Screenshot](swagger.png)
 
