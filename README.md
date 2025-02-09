@@ -7,7 +7,7 @@ This is a Spring Boot project designed to manage employee data. It provides REST
 - **Update Employee**: Update existing employee details.
 - **Get Employee(s)**: Retrieve employee data by ID or get all employees with pagination.
 - **Delete Employee**: Remove employees from the system.
-- **Exception Handling**: Centralized exception handling using `@ControllerAdvice`.
+- **Exception Handling**: Centralized exception handling using `@RestControllerAdvice`.
 - **Swagger Integration**: For API documentation and testing.
 - **In-Memory H2 Database**: For development and testing purposes.
 
@@ -32,5 +32,7 @@ git clone <repository-url>
 cd employee-management-system
 
 # Swagger UI Path
-springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.path=/swagger-ui/index.html#/
+
+![Swagger UI Screenshot](https://github.com/CemHarput/EmployeeCrudAPI/blob/master/swagger.png)
 
