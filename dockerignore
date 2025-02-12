@@ -1,0 +1,4 @@
+.mvn/
+.idea/
+*.log
+node_modules/
